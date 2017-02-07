@@ -31,7 +31,7 @@
    end
 end
 instance = RegularExpresions.new
- instance.acount_found("El Cliente con el número de cuenta 1234-123-123 se encuentra en proceso de revisión de sus documentos") == true
-p instance.return_acount_number("El Cliente con el número de cuenta 1234-123-123 se encuentra en proceso de revisión de sus documentos") #== true
- instance.return_array("Hay que transferir los fondos de la cuenta 1234-123-123 a la cuenta 4321-321-311")
+ p instance.acount_found("El Cliente con el número de cuenta 1234-123-123 se encuentra en proceso de revisión de sus documentos") == true
+p instance.return_acount_number("El Cliente con el número de cuenta 1234-123-123 se encuentra en proceso de revisión de sus documentos") == "1234-123-123"
+p instance.return_array("Hay que transferir los fondos de la cuenta 1234-123-123 a la cuenta 4321-321-311")==["1234-123-123","4321-321-311"]
  instance.change_for_x("1234-123-123")
