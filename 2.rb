@@ -6,7 +6,7 @@ format_account = "1234-123-123"
   end
 #---Regresa un número de cuenta si existe dentro del string y nil  en el caso contrario.
    def return_acount_number(string)
-
+     /\d/.match(string)
    end
 #---Regresa un array con los números de cuenta que existen dentro del string y un array vacío en el caso contrario.
    def return_array(string)
