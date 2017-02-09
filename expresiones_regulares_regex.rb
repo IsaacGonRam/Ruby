@@ -1,4 +1,3 @@
-format_account = "1234-123-123"
 #---Regresa true si encuentra un numero de cuenta.
   def acount_found(msj)
      /\S\d{4}-\d{3}-\d{3}/ !~ msj
